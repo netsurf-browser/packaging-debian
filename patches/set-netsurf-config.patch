@@ -1,0 +1,4 @@
+--- /dev/null
++++ b/netsurf/Makefile.config
+@@ -0,0 +1,1 @@
++NETSURF_FB_FONTLIB := freetype

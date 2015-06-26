@@ -1,0 +1,52 @@
+Source: netsurf
+Section: web
+Priority: extra
+Maintainer: Vincent Sanders <vince@debian.org>
+Build-Depends: debhelper (>= 9~), libcurl3-dev, libpng-dev, libgtk2.0-dev, flex, bison, libhtml-parser-perl, libmozjs185-dev, librsvg2-dev, libjpeg-dev, imagemagick, libfreetype6-dev, libvncserver-dev, libsdl1.2-dev, libxcb1-dev, libxcb-icccm4-dev, libxcb-image0-dev, libxcb-keysyms1-dev, libxcb-util0-dev, libssl-dev, gperf
+Standards-Version: 3.9.5
+Homepage: http://www.netsurf-browser.org
+Vcs-Browser: http://source.netsurf-browser.org/
+Vcs-Git: git://git.netsurf-browser.org/netsurf-all.git
+
+Package: netsurf
+Architecture: all
+Depends: ${misc:Depends}, netsurf-gtk
+Provides: www-browser
+Section: oldlibs
+Description: small web browser with CSS support - transitional package
+ NetSurf is a multi-platform lightweight web browser. Its aim is to provide
+ comprehensive rendering of HTML 5 with CSS 2 in a small resource footprint 
+ while remaining fast. 
+ .
+ This is a transitional package and can safely be removed.
+
+Package: netsurf-gtk
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, netsurf-common (=${source:Version})
+Provides: www-browser
+Recommends: mime-support
+Description: small web browser with CSS support for GTK
+ NetSurf is a multi-platform lightweight web browser. It aims to provide
+ comprehensive rendering of HTML 5 with CSS 2 in a small resource footprint
+ without compromising performance.
+
+Package: netsurf-fb
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, netsurf-common (=${source:Version})
+Provides: www-browser
+Recommends: mime-support
+Description: small web browser with CSS support for framebuffers
+ NetSurf is a multi-platform lightweight web browser. It aims to provide
+ comprehensive rendering of HTML 5 with CSS 2 in a small resource footprint
+ without compromising performance.
+
+Package: netsurf-common
+Architecture: all
+Depends: ${misc:Depends}
+Replaces: netsurf-gtk (<< 2.9-2)
+Breaks: netsurf-gtk (<< 2.9-2)
+Description: small web browser with CSS support common files
+ NetSurf is a multi-platform lightweight web browser. It aims to provide
+ comprehensive rendering of HTML 5 with CSS 2 in a small resource footprint
+ without compromising performance.
+

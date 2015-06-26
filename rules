@@ -1,0 +1,30 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+# Uncomment this to turn on verbose mode.
+export DH_VERBOSE=1
+
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all,-pie
+export DEB_CFLAGS_MAINT_APPEND = -Wno-error
+export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
+
+%:
+	dh $@ 
+
+override_dh_auto_build:
+	dh_auto_build -- PREFIX=/usr TARGET=gtk
+	dh_auto_build -- PREFIX=/usr TARGET=framebuffer
+
+override_dh_auto_install:
+	dh_auto_install -- PREFIX=/usr TARGET=gtk
+	mkdir -p debian/netsurf-gtk/usr/share/pixmaps
+	mkdir -p debian/netsurf-gtk/usr/share/applications
+	convert netsurf/gtk/res/netsurf.xpm -resize \!32x\!32 debian/netsurf-gtk/usr/share/pixmaps/netsurf.xpm
+	convert netsurf/gtk/res/netsurf.xpm debian/netsurf-gtk/usr/share/pixmaps/netsurf.png
+	install -m 644 debian/netsurf-gtk.desktop debian/netsurf-gtk/usr/share/applications
+	dh_auto_install -- PREFIX=/usr TARGET=framebuffer
+
+override_dh_auto_clean:
+	dh_auto_clean -- PREFIX=/usr TARGET=gtk
+	dh_auto_clean -- PREFIX=/usr TARGET=framebuffer
+

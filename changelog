@@ -1,0 +1,170 @@
+netsurf (3.2+dfsg-2.2) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Remove -DGDK_PIXBUF_DISABLE_DEPRECATED to avoid an implicit function
+    declaration issue that was thought to be the cause of an arm64 build failure.
+  * Make declarations match between generated file and importing file for
+    menu_cursor_pixdata to fix arm64 build failure.
+  * Remove nsgenbind/build* in clean target to avoid "unrepresentable changes
+    to source" error.
+
+ -- Peter Michael Green <plugwash@debian.org>  Tue, 02 Jun 2015 10:16:59 +0000
+
+netsurf (3.2+dfsg-2.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  [Sebastian Ramacher]
+  * debian/patches/change-how-gdk-image.patch: Fix build against
+    libgdk-pixbuf2.0-dev 2.31.4. (Closes: #786819)
+
+ -- Peter Michael Green <plugwash@debian.org>  Tue, 02 Jun 2015 01:00:37 +0000
+
+netsurf (3.2+dfsg-2) unstable; urgency=medium
+
+  * Do not build with javascript support on s390x
+
+ -- Vincent Sanders <vince@debian.org>  Fri, 29 Aug 2014 22:57:28 +0100
+
+netsurf (3.2+dfsg-1) unstable; urgency=medium
+
+  * New upstream release (closes: #756223)
+  * New upstream release allows opening local paths (closes: #577136)
+  * New upstream release fixes test selection (closes: #736983)
+  * New upstream release fixes fallback translations (closes: 670284)
+  * Acknowledge NMU, thanks to Mike Gilbert
+
+ -- Vincent Sanders <vince@debian.org>  Thu, 28 Aug 2014 21:56:12 +0100
+
+netsurf (2.9-2.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Use lcms2 (closes: #745534).
+  * Add libssl-dev build-dependency (closes: #747788).
+
+ -- Michael Gilbert <mgilbert@debian.org>  Sat, 29 Mar 2014 09:02:51 +0000
+
+netsurf (2.9-2) unstable; urgency=low
+
+  * Fix upgrade as netsurf-common lacked Replaces/Breaks (Closes: #674113)
+
+ -- Vincent Sanders <vince@debian.org>  Wed, 23 May 2012 10:48:30 +0100
+
+netsurf (2.9-1) unstable; urgency=low
+
+  * New upstream release
+  * Enable hardening build flags (Closes: #672302)
+
+ -- Vincent Sanders <vince@debian.org>  Tue, 22 May 2012 09:59:13 +0100
+
+netsurf (2.8-2) unstable; urgency=high
+
+  * Fix user settings directory permissions (Closes: #659376)
+    Fixes: CVE-2012-0844
+
+ -- Vincent Sanders <vince@debian.org>  Thu, 16 Feb 2012 10:59:13 +0000
+
+netsurf (2.8-1) unstable; urgency=low
+
+  * New upstream release
+    - Fixes FTBFS on amd64 (Closes: #634427)
+    - Fixes program abort on https links (Closes: #633506)
+  * Improve short description (Closes: #625220)
+  * Provide vcs-svn header (Closes: #638502)
+
+ -- Vincent Sanders <vince@debian.org>  Thu, 22 Sep 2011 00:50:59 +0100
+
+netsurf (2.7-2) unstable; urgency=low
+
+  * Fix FTBFS on kFreeBSD
+  * CSS page centering works in 2.7 (Closes: #577180)
+  * String Serarching available (Closes: #435012)
+  * Tab handling improved in 2.7 (Closes: #589424)
+
+ -- Vincent Sanders <vince@debian.org>  Fri, 22 Apr 2011 10:50:37 +0100
+
+netsurf (2.7-1) unstable; urgency=low
+
+  * New upstream (Closes: #586662)
+  * NetSurf no longer requires lemon to build (Closes: #574299)
+
+ -- Vincent Sanders <vince@debian.org>  Tue, 19 Apr 2011 09:55:01 +0100
+
+netsurf (2.1-2.1) unstable; urgency=low
+
+  * NMU from Moenchengladbach BSP
+  * Fixes FTBFS on kFreeBSD (Closes: #559479)
+
+ -- Axel Beckert <abe@deuxchevaux.org>  Sat, 23 Jan 2010 19:14:01 +0100
+
+netsurf (2.1-2) unstable; urgency=low
+
+  * Add ttf-bitstream-vera to Depends: for framebuffer builds.
+    (Closes: #539897)
+
+ -- Daniel Silverstone <dsilvers@debian.org>  Sat, 15 Aug 2009 12:37:06 +0100
+
+netsurf (2.1-1) unstable; urgency=low
+
+  * New upstream release (Closes: #533463)
+    - Now produces variants for linux framebuffer, VNC server and SDL,
+      along with the SDL release from before.
+    - Wikipedia CSS images now rendered properly (Closes: #434964)
+    - Open File now bound to Control+O (Closes: #482755)
+    - No longer asserts on huge box objects (Closes: #471719)
+
+ -- Daniel Silverstone <dsilvers@debian.org>  Mon, 20 Jul 2009 10:30:48 +0200
+
+netsurf (2.0-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Daniel Silverstone <dsilvers@debian.org>  Tue, 21 Apr 2009 22:58:52 +0100
+
+netsurf (1.2-1) unstable; urgency=low
+
+  * New upstream (Closes: #472599)
+  * Fixes segfault (Closes: #442466)
+  * Form input no longer confuses non-alphanumeric keys (Closes: #435319)
+  * Blank lines in preformatted blocks are displayed correctly (Closes: #435013)
+
+ -- Vincent Sanders <vince@debian.org>  Sat, 05 Apr 2008 00:48:41 +0000
+
+netsurf (1.1-2.1) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * Add missing assert.h inclusion in css.h to fix FTBFS (Closes: #470248),
+    thanks Kumar Appaiah for the patch.
+
+ -- Nico Golde <nion@debian.org>  Wed, 19 Mar 2008 17:24:40 +0100
+
+netsurf (1.1-2) unstable; urgency=low
+
+  * Fix unusable select widget (Closes: #434963)
+  * Add www-browser provides (Closes: #445376)
+  * Fix memory cache size option.
+  * Fix proxy option handling.
+  * Fix out of bounds window scrolling.
+  * Fix handling of CSS colour values.
+
+ -- Vincent Sanders <vince@debian.org>  Sun, 07 Oct 2007 10:59:41 +0000
+
+netsurf (1.1-1) unstable; urgency=low
+
+  * New upstream (Closes: #435463, #437624)
+  * Build against correct library packages (Closes: #433523)
+
+ -- Vincent Sanders <vince@debian.org>  Tue, 14 Aug 2007 22:21:05 +0000
+
+netsurf (1.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #427399)
+  * Correct logging output verbosity control switch.
+  * Corrected build to allow for source directory to be renamed.
+  * Correct handling of file: URI when browsing directories.
+  * Fix for crash when viewing sites with frames.
+  * Fix for runaway cpu usage on sites with frames.
+  * Fix for cookie handling.
+  * Fix scrollbar handling for anchors.
+  
+ -- Vincent Sanders <vince@debian.org>  Sun,  3 Jun 2007 18:14:27 +0100
+
