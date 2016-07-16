@@ -1,0 +1,24 @@
+Description: use png native types, they are platform dependent.
+ (and also silence some warnings about missing memcpy prototype)
+Author: Tobias Frost <tobi@debian.org>
+---
+This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
+--- a/netsurf/framebuffer/convert_image.c
++++ b/netsurf/framebuffer/convert_image.c
+@@ -21,6 +21,7 @@
+ #include <stdio.h>
+ #include <png.h>
+ #include <stdlib.h>
++#include <string.h>
+ 
+ #if PNG_LIBPNG_VER < 10209
+ #define png_set_expand_gray_1_2_4_to_8(png) png_set_gray_1_2_4_to_8(png)
+@@ -219,7 +220,7 @@
+ {
+ 	int bit_depth, color_type, interlace, intent;
+ 	double gamma;
+-	unsigned long width, height;
++	png_uint_32 width, height;
+ 	
+ 	/* Read the PNG details */
+ 	png_get_IHDR(png, info, &width, &height, &bit_depth,
