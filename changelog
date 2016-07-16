@@ -1,9 +1,28 @@
-netsurf (3.2-3) UNRELEASED; urgency=medium
+netsurf (3.5-1) UNRELEASED; urgency=medium
 
   * Update standards version (no change)
-  * Acknowledge NMU, thanks to Peter Michael Green
+  * New upstream release (closes: #803313)
+  * Correct VCS headers (closes: #819882)
 
- -- Vincent Sanders <vince@debian.org>  Sun, 28 Jun 2015 21:56:12 +0100
+ -- Vincent Sanders <vince@debian.org>  Sun, 17 Jul 2016 21:56:12 +0100
+
+netsurf (3.2+dfsg-3) unstable; urgency=medium
+
+  * Heap overflow fix Fixes: CVE-2015-7508 (Closes: #810491)
+  * Out of bounds read fix Fixes: CVE-2015-7507
+  * Out of bounds read fix Fixes: CVE-2015-7506
+  * Stack overflow fix Fixes: CVE-2015-7505
+  * Update package copyright to fix lintian warnings
+  * Acknowledge NMU, thanks to Tobias Frost
+
+ -- Vincent Sanders <vince@debian.org>  Fri, 15 Jul 2016 13:58:09 +0100
+
+netsurf (3.2+dfsg-2.3) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Fix compilation error on s390x, use libpng own types. (Closes: #820612)
+
+ -- Tobias Frost <tobi@debian.org>  Sun, 10 Apr 2016 17:36:37 +0200
 
 netsurf (3.2+dfsg-2.2) unstable; urgency=medium
 
@@ -172,6 +191,5 @@ netsurf (1.0-1) unstable; urgency=low
   * Fix for runaway cpu usage on sites with frames.
   * Fix for cookie handling.
   * Fix scrollbar handling for anchors.
-  
- -- Vincent Sanders <vince@debian.org>  Sun,  3 Jun 2007 18:14:27 +0100
 
+ -- Vincent Sanders <vince@debian.org>  Sun,  3 Jun 2007 18:14:27 +0100
