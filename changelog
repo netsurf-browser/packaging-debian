@@ -1,10 +1,17 @@
-netsurf (3.5-1) UNRELEASED; urgency=medium
+netsurf (3.6-1) UNRELEASED; urgency=medium
+
+  * Update standards version (no change)
+  * New upstream release
+
+ -- Vincent Sanders <vince@debian.org>  Tue, 04 Oct 2016 09:04:59 +0100
+
+netsurf (3.5-1) unstable; urgency=medium
 
   * Update standards version (no change)
   * New upstream release (closes: #803313)
   * Correct VCS headers (closes: #819882)
 
- -- Vincent Sanders <vince@debian.org>  Sun, 17 Jul 2016 21:56:12 +0100
+ -- Vincent Sanders <vince@debian.org>  Tue, 04 Sep 2016 09:04:20 +0100
 
 netsurf (3.2+dfsg-3) unstable; urgency=medium
 

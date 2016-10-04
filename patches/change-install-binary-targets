@@ -1,5 +1,5 @@
---- a/netsurf/framebuffer/Makefile.target
-+++ b/netsurf/framebuffer/Makefile.target
+--- a/netsurf/frontends/framebuffer/Makefile.target
++++ b/netsurf/frontends/framebuffer/Makefile.target
 @@ -191,7 +191,7 @@
  install-framebuffer:
  	$(Q)mkdir -p $(DESTDIR)$(NETSURF_FRAMEBUFFER_BIN)
@@ -9,8 +9,8 @@
  	$(Q)for F in $(NETSURF_FRAMEBUFFER_RESOURCE_LIST); do cp -vL framebuffer/res/$$F $(DESTDIR)/$(NETSURF_FRAMEBUFFER_RESOURCES); done
  	$(Q)$(SPLIT_MESSAGES) -l en -p fb -f messages resources/FatMessages | gzip -9n > $(DESTDIR)$(NETSURF_FRAMEBUFFER_RESOURCES)messages
  
---- a/netsurf/gtk/Makefile.target
-+++ b/netsurf/gtk/Makefile.target
+--- a/netsurf/frontends/gtk/Makefile.target
++++ b/netsurf/frontends/gtk/Makefile.target
 @@ -142,7 +142,7 @@
  
  install-gtk:
