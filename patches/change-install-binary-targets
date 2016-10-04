@@ -18,5 +18,5 @@
 -	$(Q)install nsgtk $(DESTDIR)$(NETSURF_GTK_BIN)netsurf
 +	$(Q)install nsgtk $(DESTDIR)$(NETSURF_GTK_BIN)netsurf-gtk
  	$(Q)mkdir -p $(DESTDIR)$(NETSURF_GTK_RESOURCES)icons
- 	$(Q)install -m 0644 gtk/res/icons/*.png $(DESTDIR)$(NETSURF_GTK_RESOURCES)/icons
+ 	$(Q)install -m 0644 $(NSGTK_RESOURCES_DIR)/icons/*.png $(DESTDIR)$(NETSURF_GTK_RESOURCES)/icons
  	$(Q)mkdir -p $(DESTDIR)$(NETSURF_GTK_RESOURCES)throbber
