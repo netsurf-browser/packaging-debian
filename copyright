@@ -106,8 +106,16 @@ Files: libnsutils/*
 Copyright: 2014-2015 Vincent Sanders <vince@netsurf-browser.org>
 License: MIT
 
+Files: libnspsl/*
+Copyright: 2016 Vincent Sanders <vince@netsurf-browser.org>
+License: MIT
+
 Files: librosprite/*
 Copyright: 2007-2008 James Shaw <jshaw@netsurf-browser.org>
+License: MIT
+
+Files: libpencil/*
+Copyright: 2005 James Bursa <james@netsurf-browser.org>
 License: MIT
 
 Files: librufl/*
