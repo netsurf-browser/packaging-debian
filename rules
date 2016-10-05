@@ -19,8 +19,8 @@ override_dh_auto_install:
 	dh_auto_install -- PREFIX=/usr TARGET=gtk
 	mkdir -p debian/netsurf-gtk/usr/share/pixmaps
 	mkdir -p debian/netsurf-gtk/usr/share/applications
-	convert netsurf/gtk/res/netsurf.xpm -resize \!32x\!32 debian/netsurf-gtk/usr/share/pixmaps/netsurf.xpm
-	convert netsurf/gtk/res/netsurf.xpm debian/netsurf-gtk/usr/share/pixmaps/netsurf.png
+	convert netsurf/frontends/gtk/res/netsurf.xpm -resize \!32x\!32 debian/netsurf-gtk/usr/share/pixmaps/netsurf.xpm
+	convert netsurf/frontends/gtk/res/netsurf.xpm debian/netsurf-gtk/usr/share/pixmaps/netsurf.png
 	install -m 644 debian/netsurf-gtk.desktop debian/netsurf-gtk/usr/share/applications
 	dh_auto_install -- PREFIX=/usr TARGET=framebuffer
 
