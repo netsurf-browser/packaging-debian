@@ -12,8 +12,8 @@ export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
 	dh $@ 
 
 override_dh_auto_build:
-	dh_auto_build -- PREFIX=/usr TARGET=gtk
-	dh_auto_build -- PREFIX=/usr TARGET=framebuffer
+	dh_auto_build -- V=1 PREFIX=/usr TARGET=gtk
+	dh_auto_build -- V=1 PREFIX=/usr TARGET=framebuffer
 
 override_dh_auto_install:
 	dh_auto_install -- PREFIX=/usr TARGET=gtk
