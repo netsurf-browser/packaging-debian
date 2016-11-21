@@ -2,6 +2,7 @@ Source: netsurf
 Section: web
 Priority: extra
 Maintainer: Vincent Sanders <vince@debian.org>
+Uploaders: Daniel Silverstone <dsilvers@digital-scurf.org>
 Build-Depends: debhelper (>= 9~), libcurl3-dev, libpng-dev, libgtk2.0-dev, flex, bison, libhtml-parser-perl, librsvg2-dev, libjpeg-dev, imagemagick, libfreetype6-dev, libvncserver-dev, libsdl1.2-dev, libxcb1-dev, libxcb-icccm4-dev, libxcb-image0-dev, libxcb-keysyms1-dev, libxcb-util0-dev, libssl-dev, gperf
 Standards-Version: 3.9.8
 Homepage: http://www.netsurf-browser.org
@@ -29,6 +30,8 @@ Description: small web browser with CSS support for GTK
  NetSurf is a multi-platform lightweight web browser. It aims to provide
  comprehensive rendering of HTML 5 with CSS 2 in a small resource footprint
  without compromising performance.
+ .
+ This version uses the GTK+ toolkit.
 
 Package: netsurf-fb
 Architecture: any
@@ -39,14 +42,18 @@ Description: small web browser with CSS support for framebuffers
  NetSurf is a multi-platform lightweight web browser. It aims to provide
  comprehensive rendering of HTML 5 with CSS 2 in a small resource footprint
  without compromising performance.
+ .
+ This version uses no toolkit and displays output on various framebuffers.
 
 Package: netsurf-common
 Architecture: all
-Depends: ${misc:Depends}
+Depends: ${misc:Depends}, ca-certificates
 Replaces: netsurf-gtk (<< 2.9-2)
 Breaks: netsurf-gtk (<< 2.9-2)
 Description: small web browser with CSS support common files
  NetSurf is a multi-platform lightweight web browser. It aims to provide
  comprehensive rendering of HTML 5 with CSS 2 in a small resource footprint
  without compromising performance.
+ .
+ These are the common resources for all versions.
 

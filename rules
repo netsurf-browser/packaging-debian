@@ -23,6 +23,8 @@ override_dh_auto_install:
 	convert netsurf/frontends/gtk/res/netsurf.xpm debian/netsurf-gtk/usr/share/pixmaps/netsurf.png
 	install -m 644 debian/netsurf-gtk.desktop debian/netsurf-gtk/usr/share/applications
 	dh_auto_install -- PREFIX=/usr TARGET=framebuffer
+	rm debian/tmp/usr/share/netsurf/ca-bundle.txt
+	ln -s /etc/ssl/certs/ca-certificates.crt debian/tmp/usr/share/netsurf/ca-bundle.txt
 
 override_dh_auto_clean:
 	dh_auto_clean -- PREFIX=/usr TARGET=gtk
