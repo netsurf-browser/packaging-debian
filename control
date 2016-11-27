@@ -11,6 +11,7 @@ Vcs-Git: git://git.netsurf-browser.org/packaging/debian.git
 
 Package: netsurf
 Architecture: all
+Multi-Arch: foreign
 Depends: ${misc:Depends}, netsurf-gtk
 Provides: www-browser
 Section: oldlibs

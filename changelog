@@ -1,3 +1,17 @@
+netsurf (3.6-3) unstable; urgency=medium
+
+  * Apply upstream patch fixing nsgenbind on BE architectures
+  * Re-enable duktape javascript engine on all architectures
+
+ -- Vincent Sanders <vince@debian.org>  Sun, 27 Nov 2016 14:54:31 +0000
+
+netsurf (3.6-2) unstable; urgency=medium
+
+  * Apply upstream patch disabling duktape compilation on unsupported
+    architectures.
+
+ -- Vincent Sanders <vince@debian.org>  Thu, 24 Nov 2016 22:24:09 +0000
+
 netsurf (3.6-1) unstable; urgency=medium
 
   * New upstream release
