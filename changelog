@@ -1,3 +1,9 @@
+netsurf (3.6-4) UNRELEASED; urgency=medium
+
+  * Make png generation reproducible.
+
+ -- Vincent Sanders <vince@debian.org>  Mon, 02 Jan 2017 11:55:26 +0000
+
 netsurf (3.6-3) unstable; urgency=medium
 
   * Apply upstream patch fixing nsgenbind on BE architectures
