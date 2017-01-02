@@ -38,7 +38,7 @@ Package: netsurf-fb
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, netsurf-common (=${source:Version})
 Provides: www-browser
-Recommends: mime-support
+Recommends: mime-support fonts-dejavu
 Description: small web browser with CSS support for framebuffers
  NetSurf is a multi-platform lightweight web browser. It aims to provide
  comprehensive rendering of HTML 5 with CSS 2 in a small resource footprint
