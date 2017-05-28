@@ -1,7 +1,8 @@
-netsurf (3.6-4) UNRELEASED; urgency=medium
+netsurf (3.7-1) UNRELEASED; urgency=medium
 
   * Make png generation reproducible.
   * Add font recommend dependancy for framebuffer edition
+  * Remove unecessary patches for 3.7
 
  -- Vincent Sanders <vince@debian.org>  Mon, 02 Jan 2017 11:55:26 +0000
 
