@@ -1,3 +1,3 @@
 # NetSurf HTML parser overlength line tests (quite correctly) appear to be non human readable
-netsurf source: source-is-missing libhubbub/test/data/html/mangleme.1.html
-netsurf source: source-is-missing libhubbub/test/data/html/www.directline.com.html
+netsurf source: source-is-missing libhubbub/test/data/html/mangleme.1.html *
+netsurf source: source-is-missing libhubbub/test/data/html/www.directline.com.html *
