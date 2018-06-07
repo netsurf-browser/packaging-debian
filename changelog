@@ -2,10 +2,10 @@ netsurf (3.7-1) UNRELEASED; urgency=medium
 
   * New upstream release (Closes: #869600)
   * Make png generation reproducible.
-  * Add font recommend dependancy for framebuffer edition (Closes: #867694)
-  * Ensure ssl 1.1 dependancy (Closes: #859230)
-  * Update curl dependancy for ssl 1.1
-  * Remove unecessary patches for 3.7
+  * Add font recommend dependency for framebuffer edition (Closes: #867694)
+  * Ensure ssl 1.1 dependency (Closes: #859230)
+  * Update curl dependency for ssl 1.1
+  * Update standards version (no change)
 
  -- Vincent Sanders <vince@debian.org>  Mon, 02 Jan 2017 11:55:26 +0000
 
