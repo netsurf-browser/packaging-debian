@@ -1,7 +1,10 @@
 netsurf (3.7-1) UNRELEASED; urgency=medium
 
+  * New upstream release (Closes: #869600)
   * Make png generation reproducible.
-  * Add font recommend dependancy for framebuffer edition
+  * Add font recommend dependancy for framebuffer edition (Closes: #867694)
+  * Ensure ssl 1.1 dependancy (Closes: #859230)
+  * Update curl dependancy for ssl 1.1
   * Remove unecessary patches for 3.7
 
  -- Vincent Sanders <vince@debian.org>  Mon, 02 Jan 2017 11:55:26 +0000
@@ -17,8 +20,16 @@ netsurf (3.6-2) unstable; urgency=medium
 
   * Apply upstream patch disabling duktape compilation on unsupported
     architectures.
+  * Acknowledge NMU, thanks to Sebastian Andrzej Siewior
 
  -- Vincent Sanders <vince@debian.org>  Thu, 24 Nov 2016 22:24:09 +0000
+
+netsurf (3.6-3.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Depend on libssl1.0-dev for Stretch due to curl (Closes: #846908).
+
+ -- Sebastian Andrzej Siewior <sebastian@breakpoint.cc>  Wed, 08 Feb 2017 21:10:34 +0100
 
 netsurf (3.6-1) unstable; urgency=medium
 
