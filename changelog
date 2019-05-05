@@ -1,4 +1,4 @@
-netsurf (3.7-1) UNRELEASED; urgency=medium
+netsurf (3.9-1) UNRELEASED; urgency=medium
 
   * New upstream release (Closes: #869600)
   * Make png generation reproducible.
@@ -7,7 +7,7 @@ netsurf (3.7-1) UNRELEASED; urgency=medium
   * Update curl dependency for ssl 1.1
   * Update standards version (no change)
 
- -- Vincent Sanders <vince@debian.org>  Mon, 02 Jan 2017 11:55:26 +0000
+ -- Vincent Sanders <vince@debian.org>  Sun, 05 May 2019 16:13:11 +0100
 
 netsurf (3.6-3) unstable; urgency=medium
 
