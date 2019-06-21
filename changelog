@@ -1,3 +1,10 @@
+netsurf (3.9-1) UNRELEASED; urgency=medium
+
+  * New upstream release
+  * update build dependancies to get xxd from vim-common
+
+ -- Vincent Sanders <vince@debian.org>  Fri, 21 Jun 2019 09:04:59 +0100
+
 netsurf (3.6-1) UNRELEASED; urgency=medium
 
   * Update standards version (no change)
