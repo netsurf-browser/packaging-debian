@@ -5,8 +5,8 @@ Maintainer: Vincent Sanders <vince@debian.org>
 Uploaders: Daniel Silverstone <dsilvers@digital-scurf.org>
 Build-Depends: debhelper (>= 9~), libcurl4-openssl-dev, libpng-dev, libgtk2.0-dev, flex, bison, libhtml-parser-perl, librsvg2-dev, libjpeg-dev, imagemagick, libfreetype6-dev, libvncserver-dev, libsdl1.2-dev, libxcb1-dev, libxcb-icccm4-dev, libxcb-image0-dev, libxcb-keysyms1-dev, libxcb-util0-dev, libssl-dev, gperf, xxd
 Standards-Version: 4.1.4
-Homepage: http://www.netsurf-browser.org
-Vcs-Browser: http://source.netsurf-browser.org/packaging/debian.git/
+Homepage: https://www.netsurf-browser.org
+Vcs-Browser: https://source.netsurf-browser.org/packaging/debian.git/
 Vcs-Git: git://git.netsurf-browser.org/packaging/debian.git
 
 Package: netsurf
