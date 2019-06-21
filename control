@@ -3,7 +3,7 @@ Section: web
 Priority: extra
 Maintainer: Vincent Sanders <vince@debian.org>
 Uploaders: Daniel Silverstone <dsilvers@digital-scurf.org>
-Build-Depends: debhelper (>= 9~), libcurl3-dev, libpng-dev, libgtk2.0-dev, flex, bison, libhtml-parser-perl, librsvg2-dev, libjpeg-dev, imagemagick, libfreetype6-dev, libvncserver-dev, libsdl1.2-dev, libxcb1-dev, libxcb-icccm4-dev, libxcb-image0-dev, libxcb-keysyms1-dev, libxcb-util0-dev, libssl-dev, gperf, xxd
+Build-Depends: debhelper (>= 9~), libcurl3-dev, libpng-dev, libgtk2.0-dev, flex, bison, libhtml-parser-perl, librsvg2-dev, libjpeg-dev, imagemagick, libfreetype6-dev, libvncserver-dev, libsdl1.2-dev, libxcb1-dev, libxcb-icccm4-dev, libxcb-image0-dev, libxcb-keysyms1-dev, libxcb-util0-dev, libssl-dev, gperf, vim-common
 Standards-Version: 3.9.8
 Homepage: https://www.netsurf-browser.org
 Vcs-Browser: https://source.netsurf-browser.org/packaging/debian.git/
