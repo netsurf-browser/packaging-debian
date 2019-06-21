@@ -1,3 +1,9 @@
+netsurf (3.9-1) UNRELEASED; urgency=medium
+
+  * add xxd dependancy
+
+ -- Vincent Sanders <vince@debian.org>  Fri, 21 Jun 2019 11:29:29 +0000
+
 netsurf (3.7-1) UNRELEASED; urgency=medium
 
   * Remove unecessary patches for 3.7 release
