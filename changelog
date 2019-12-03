@@ -1,4 +1,10 @@
-netsurf (3.9-1) UNRELEASED; urgency=medium
+netsurf (3.9-2) UNRELEASED; urgency=medium
+
+  * Build both gtk2 and gtk3 versions
+
+ -- Vincent Sanders <vince@debian.org>  02 Dec 2019 22:11:04 +0000
+
+netsurf (3.9-1) unstable; urgency=medium
 
   * New upstream release (Closes: #869600)
   * Make png generation reproducible.

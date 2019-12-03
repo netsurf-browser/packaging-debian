@@ -2,7 +2,7 @@
 set -e
 
 if [ "$1" != "upgrade" ]; then
-    update-alternatives --remove netsurf-browser /usr/bin/netsurf-gtk
+    update-alternatives --remove netsurf-browser /usr/bin/netsurf-gtk3
 fi
 
 #DEBHELPER#

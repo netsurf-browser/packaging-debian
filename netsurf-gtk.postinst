@@ -2,7 +2,7 @@
 set -e
 
 if [ "$1" = "configure" ]; then
-    update-alternatives --install /usr/bin/netsurf netsurf-browser /usr/bin/netsurf-gtk 80 --slave /usr/share/man/man1/netsurf.1.gz netsurf-manual /usr/share/man/man1/netsurf-gtk.1.gz
+    update-alternatives --install /usr/bin/netsurf netsurf-browser /usr/bin/netsurf-gtk3 80 --slave /usr/share/man/man1/netsurf.1.gz netsurf-manual /usr/share/man/man1/netsurf-gtk3.1.gz
 fi
 
 #DEBHELPER#
