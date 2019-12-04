@@ -1,10 +1,16 @@
-netsurf (3.9-1) UNRELEASED; urgency=medium
+netsurf (3.9-2) UNRELEASED; urgency=medium
+
+  * Change to building gtk3 version
+
+ -- Vincent Sanders <vince@debian.org>  Wed, 04 Dec 2019 21:26:06 +0000
+
+netsurf (3.9-1) unstable; urgency=medium
 
   * Add xxd build dependancy
 
  -- Vincent Sanders <vince@debian.org>  Fri, 21 Jun 2019 11:25:16 +0000
 
-netsurf (3.7-1) UNRELEASED; urgency=medium
+netsurf (3.7-1) unstable; urgency=medium
 
   * Make png generation reproducible.
   * Add font recommend dependancy for framebuffer edition

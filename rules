@@ -12,11 +12,11 @@ export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
 	dh $@ 
 
 override_dh_auto_build:
-	dh_auto_build -- V=1 PREFIX=/usr TARGET=gtk
+	dh_auto_build -- V=1 PREFIX=/usr TARGET=gtk3
 	dh_auto_build -- V=1 PREFIX=/usr TARGET=framebuffer
 
 override_dh_auto_install:
-	dh_auto_install -- PREFIX=/usr TARGET=gtk
+	dh_auto_install -- PREFIX=/usr TARGET=gtk3
 	mkdir -p debian/netsurf-gtk/usr/share/pixmaps
 	mkdir -p debian/netsurf-gtk/usr/share/applications
 	convert netsurf/frontends/gtk/res/netsurf.xpm -resize \!32x\!32 debian/netsurf-gtk/usr/share/pixmaps/netsurf.xpm
@@ -27,6 +27,6 @@ override_dh_auto_install:
 	ln -s /etc/ssl/certs/ca-certificates.crt debian/tmp/usr/share/netsurf/ca-bundle.txt
 
 override_dh_auto_clean:
-	dh_auto_clean -- PREFIX=/usr TARGET=gtk
+	dh_auto_clean -- PREFIX=/usr TARGET=gtk3
 	dh_auto_clean -- PREFIX=/usr TARGET=framebuffer
 
