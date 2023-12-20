@@ -8,7 +8,9 @@ fi
 
 # ensure Debian suite is set
 if [ "x${1}" = "x" ]; then
-DEBIAN_SUITE=buster
+DEBIAN_SUITE=bullseye
+else
+DEBIAN_SUITE="${1}"
 fi
 
 # show parameters
