@@ -1,0 +1,2 @@
+.gitattributes export-ignore
+ci-build-script.sh export-ignore
